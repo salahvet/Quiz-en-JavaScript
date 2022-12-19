@@ -2,7 +2,7 @@
 
 Création de quiz on utilisons le java Script pour  afficher les questions et la sélection de la bonne réponse 
 
-le Quiz il comport 20 questions  par domaine dans 5 domaines différents 
+le Quiz il comport 10 questions  par domaine dans 5 domaines différents 
       *HTML
       *CSS
       *Java Script/AJAX
@@ -12,4 +12,12 @@ le Quiz il comport 20 questions  par domaine dans 5 domaines différents
 
 
 une interface simple qui gère  les questions par domaine sur 5 page différentes 
-et pour chaque question 4 réponses différente,avec un choix simple ou multiple,  
+et pour chaque question plusieurs réponses différente,avec un choix simple ou multiple,  
+
+references questions:
+https://www.alsacreations.com/quiz/
+https://www.w3schools.com/mysql/mysql_quiz.asp
+https://aymeric-auberton.fr/academie/
+
+
+

@@ -1,0 +1,89 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    padding: 20px;
+    box-sizing: border-box;
+}
+h1{
+
+    padding: 10px;
+    color: rgb(36, 36, 36);
+    text-align: center;
+    background-color: rgb(223, 78, 15);
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgb(235, 157, 88);
+    max-width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+p{
+    padding: 20px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+fieldset{
+    padding-bottom: 20px;
+    border: none;
+}
+legend{
+    padding: 20px;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+label{
+    font-size: 1.2em;
+}
+.layout{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(240, 237, 253);
+   
+}
+
+button{
+    background-color: rgb(239, 101, 15);
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px  rgb(248, 150, 105);
+    font-size: 1.4em;
+      
+}
+
+
+#submitButton:hover{
+    background-color: rgb(249, 100, 100);
+}
+#submitButton:active{
+    color: rgb(93, 93, 215);
+}
+
+
+
+footer{
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.correct{
+   background-color: rgb(112, 214, 112);
+    
+}
+
+.wrong{
+ background-color: red;
+}
+
+/* input:checked {
+    margin-left: 25px;
+    border: 1px solid blue;
+  } */
