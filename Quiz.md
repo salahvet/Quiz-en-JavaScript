@@ -19,5 +19,8 @@ https://www.alsacreations.com/quiz/
 https://www.w3schools.com/mysql/mysql_quiz.asp
 https://aymeric-auberton.fr/academie/
 
+le reste a améliorer a apporter
 
+- creation de la classe QuizElement pour gérer tout ce qui est relatif à UN QuizElement.
+  Cela te permettra de découper davantage ton code.
 

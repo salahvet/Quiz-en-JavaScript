@@ -1,5 +1,10 @@
 body{
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hide{
+    display: none;
 }
 header{
     padding: 20px;
@@ -26,6 +31,7 @@ p{
 
 
 fieldset{
+    box-sizing: border-box;
     padding-bottom: 20px;
     border: none;
 }
@@ -63,8 +69,19 @@ button{
     color: rgb(93, 93, 215);
 }
 
+#nextButton:hover{
+    background-color: rgb(249, 100, 100);
+}
+#nextButton:active{
+    color: rgb(93, 93, 215);
+}
 
-
+#goBack:hover{
+    background-color: rgb(249, 100, 100);
+}
+#goBack:active{
+    color: rgb(93, 93, 215);
+}
 footer{
     box-sizing: border-box;
     padding: 20px;
@@ -87,3 +104,16 @@ footer{
     margin-left: 25px;
     border: 1px solid blue;
   } */
+
+.hide{
+    display: none;
+}
+.Flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+
+

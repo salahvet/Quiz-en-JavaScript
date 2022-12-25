@@ -1,0 +1,299 @@
+{
+    "questionsHTML" :[ 
+{ "question": "1/Qu'est-ce que HTML?", 
+"answers": ["Onglet Maison de Liste de Diffusion", "Langage de balisage hypertexte", 
+"Langage de marque commerciale hyperspace", "XpTdr Mdr Lol"],
+"correctAnswer": "Langage de balisage hypertexte"
+},
+
+{"question": "2/Quel est le but de HTML?",
+"answers": ["Pour formater les pages web", "Pour structurer le contenu d'une page web", 
+"Pour créer des pages dynamiques", "Pour concurrencer Google et Facebook"],
+"correctAnswer": "Pour structurer le contenu d'une page web"
+},
+
+{"question": "3/En quelle année HTML est né?",
+"answers": ["Dans les années 1970 avec Arpanet", "Entre 1986 et 1988 avec Club Dorothée",
+    "Exactement en 1990 avec la naissance d'Emma Watson", "Quelque part en 1993 sous le mandat de Bill Clinton"],
+"correctAnswer": "Quelque part en 1993 sous le mandat de Bill Clinton"
+},
+
+{"question": "4/Qu'est-ce qu'un navigateur web?",
+"answers": ["Un réseau social", "Un outil d'accès à Internet", "Un logiciel qui interprète et affiche le code HTML", 
+"La première application mondiale"],
+"correctAnswer": "Un logiciel qui interprète et affiche le code HTML"
+},
+
+{"question": "5/Comment représentez-vous un paragraphe en HTML?",
+"answers": ["&lt; ul &gt;", "&lt; li &gt;", "&lt; h1 &gt;", "&lt; div &gt;", "paragraph", "&lt; p &gt;"],
+"correctAnswer": "< p >"
+},
+{"question": "6/Comment représentez-vous une liste en HTML?",
+"answers": ["&lt; ul &gt;", "&lt; li &gt;", "&lt; a &gt;", "&lt; div &gt;", "list", "&lt; p &gt;"],
+"correctAnswer": "< ul >"
+},
+
+{"question": "7/Quel élément ne fait pas partie de cette liste?",
+"answers": ["&lt; ul &gt;", "&lt; li &gt;", "&lt; a &gt;", "&lt; div &gt;", "&lt; img &gt;", "&lt; span &gt;"],
+"correctAnswer": "< img >"
+},
+
+{"question": "8/Citez un attribut HTML lié aux images?",
+"answers": ["class", "href", "src", "link", "a", "data"],
+"correctAnswer": "src"
+},
+{"question": "9/Quel attribut spécifie la destination d'un lien?",
+"answers": ["class", "href", "src", "link", "img", "data"],
+"correctAnswer": "href"
+},
+
+{"question": "10/À quoi servent les spécifications ARIA, liées à HTML ?", "answers":[
+"à rendre le contenu et les applications web accessibles",
+"à gérer les familles de polices sur la page web",
+"à construire des pages web audibles et musicales",
+"à aider à l'internationalisation du web"],
+"correctAnswer": "à rendre le contenu et les applications web accessibles"}],
+
+    "questionsCSS" : [  
+{"question": "1/Que signifie CSS ?",
+"answers": ["Cascading Style Sheets", "Create Simple Samples", "C'est Super Simple !", "Choucroute et Saucisses de Strasbourg"],
+"correctAnswer": "Cascading Style Sheets"
+},
+{
+"question": "2/À quoi sert le langage CSS ?",
+"answers": ["À réaliser des pages dynamiques", "À ajouter du style aux documents web", "À insérer du contenu dans une page internet", "À simuler une application en mode avion durant les trajets dans un bus"],
+"correctAnswer": "À ajouter du style aux documents web"
+},
+{
+"question": "3/Pourquoi utilise-t-on généralement du CSS ?",
+"answers": ["Pour se compliquer la vie bien sûr", "Pour séparer le contenu et la présentation des documents web", "Cela permet de faire de plus jolis dégradés de couleurs", "Parce que c'est plus simple à comprendre que JavaScript"],
+"correctAnswer": "Pour séparer le contenu et la présentation des documents web"
+},
+{
+"question": "4/Où est-il conseillé de placer le code CSS ?",
+"answers": ["Dans le &lt;body&gt;", "Entre les balises <head>, c'est bien plus propre", "Dans un fichier externe utilisable pour plusieurs pages", "Dans un fichier JavaScript"],
+"correctAnswer": "Dans un fichier externe utilisable pour plusieurs pages"
+},
+{
+"question": "5/Dans quoi définit-on les déclarations CSS ?",
+"answers": ["Entre deux crochets séparées par des tirets [ ... - ... ]", "Entre deux guillemets séparées par des slashs \" ... / ... \"", "Entre deux accolades séparés par des points-virgules { ... ; ... }", "Dans un fichier texte de type \".doc\" ou \"docx\""],
+"correctAnswer": "Entre deux accolades séparés par des points-virgules"
+},
+{
+"question": "6/Dans la règle suivante, quel élément deviendra rouge ? strong#intro {background-color: red;}",
+"answers": ["L'élément dont l'id est \"intro\" et qui est contenu dans un élément &lt;strong &gt;",
+"L'élément &lt;strong &gt; dont l'id est \"intro\"", "Tous les éléments &lt;strong &gt; contenus dans un élément dont l'id est \"intro\"",
+"Tous les éléments &lt;strong &gt; et les éléments dont l'id est \"intro\""],
+"correctAnswer": "L'élément <strong> dont l'id est \"intro\""
+},
+{
+"question": "7/Quel élément sépare la propriété de sa valeur ?",
+"answers": ["Le signe espace ()", "Le signe égal (=)", "Le signe deux points (:)", "Le signe point-virgule (;)", "Un signe impossible à distinguer"],
+"correctAnswer": "Le signe deux points (:)"
+},
+{
+"question": "8/Pourquoi est-il d'usage de sauter une ligne entre chaque déclaration ?",
+"answers": ["Pour rien du tout", "Pour que le code soit bien interprété par les navigateurs", "Pour rendre le code plus lisible et la maintenance plus facile", "Pour faciliter les échanges de styles entre deux fichiers (je raconte n'importe quoi là)"],
+"correctAnswer": "Pour rendre le code plus lisible et la maintenance plus facile"
+},
+{
+"question": "9/À quoi sert le sélecteur de classe : h2.nomDeClasse ?",
+"answers": ["Ah bon ... C'est censé servir à quelque chose ?", "À créer une ancre sur la balise &lt;h2 &gt;", "À définir différentes propriétés pour l'élément &lt; h2 &gt; dont la classe est \"nomDeClasse\".", "À ajouter un peu de classe à notre code parfois un peu tristounet"],
+"correctAnswer": "À définir différentes propriétés pour l'élément <h2> dont la classe est \"nomDeClasse\"."
+},
+{
+"question": "10/Combien de règles peut contenir un fichier CSS ?",
+"answers": ["Il n'y a pas de limite, on peut en créer autant que l'on veut", "Si le poids du fichier n'excède pas 20Ko, c'est tout bon", "150 à plus ou moins 10%", "Cela dépend des navigateurs"],
+"correctAnswer": "Il n'y a pas de limite, on peut en créer autant que l'on veut"}],
+
+"questionsJS": [
+{
+"question": "1/Quel est le rapport entre Java et JavaScript ?",
+"answers": [
+"C'est le même langage, mais le nom JavaScript est utilisé pour le code s'exécutant dans une page Web.",
+"Ce sont deux langages différents, malgré quelques points communs dans la syntaxe.",
+"Java est une version améliorée de JavaScript.",
+"Java est une île, ça n'a rien à voir !"
+],
+"correctAnswer": "Ce sont deux langages différents, malgré quelques points communs dans la syntaxe."
+},
+{
+"question": "2/Laquelle de ces syntaxes est correcte ?",
+"answers": [
+"if (a != 2) {}",
+"if a != 2 {}",
+"if (a <> 2) {}",
+"if a <> 2 {}"
+],
+"correctAnswer": "if (a != 2) {}"
+},
+{
+"question": "3/Quel attribut des noeuds de l'arbre DOM correspond à l'attribut HTML class ?",
+"answers": [
+"class",
+"CLASS",
+"className",
+"listClass"
+],
+"correctAnswer": "className"
+},
+{
+"question": "4/Dans un fichier JavaScript externe (.js), il faut :",
+"answers": [
+"entourer le code avec les balises <script> et </script>.",
+"préciser l’encodage du fichier avec la règle @charset.",
+"échapper les caractères spéciaux (X)HTML.",
+"Aucune des réponses précédentes."
+],
+"correctAnswer": "Aucune des réponses précédentes."
+},
+{
+"question": "5/Lequel de ces types d'événements n'existe pas ?",
+"answers": [
+"blur",
+"load",
+"mouseclick",
+"mouseout"
+],
+"correctAnswer": "mouseclick"
+},
+{
+"question": "6/Quelle méthode n'existe pas dans le DOM ?",
+"answers": [
+"document.getElementsByClassName",
+"document.getElementsByTagName",
+"document.getElementsByAttribute",
+"document.getElementById"
+],
+"correctAnswer": "document.getElementsByAttribute"
+},
+{
+"question": "7/Laquelle de ces propositions est un nom de variable valide en JavaScript ?",
+"answers": ["var","2a","NaN","$b","default"],
+"correctAnswer":"$b"
+},
+{
+"question": "8/Dans une boucle, l'instruction continue permet de :",
+"answers": ["continuer l'exécution du code après la boucle.","passer à l'itération suivante.","revenir au début de l'itération courante.",
+"supprimer toutes les variables globales."],
+"correctAnswer":"passer à l'itération suivante."
+},
+{
+"question": "9/var iNum = 12; iNum %= 2; A la suite de cette expression, combien vaut iNum ? ",
+"answers": ["6","14","0.12","0"],
+"correctAnswer":"0"
+},
+{
+"question": "10/Quelle méthode permet de comparer deux chaînes texte  ",
+"answers": ["charAt()","charCodeAt()","indexOf()","localeCompare()"],
+"correctAnswer":"localeCompare()"}],
+
+"questionsPHP":[
+{
+"question": "1/Que signifie PHP ?",
+"answers": ["Page Helper Process", "Programming Home Pages", "PHP: Hypertext Preprocessor"],
+"correctAnswer": "PHP: Hypertext Preprocessor"
+},
+{
+"question": "2/Quelle fonction retourne la longueur d'une chaîne de texte ?",
+"answers": ["strlen", "strlength", "length", "substr"],
+"correctAnswer": "strlen"
+},
+{
+"question": "3/Comment accède-t-on au 1er élément chaton dans le tableau suivant : $tableau = Array('chaton' , 'ornithorynque', 'dauphin'); ?",
+"answers": ["$tableau[1]", "$tableau[0]", "$tableau{0}", "$tableau.get(1)"],
+"correctAnswer": "$tableau[0]"
+},
+{
+"question": "4/Comment vérifie-t-on l'égalité de deux variables : $a et $b ?",
+"answers": ["$a = $b", "$a == $b", "$a != $b", "if($a,$b)"],
+"correctAnswer": "$a == $b"
+},
+{
+"question": "5/Quelle est l'utilité de l'opérateur || ?",
+"answers": ["Il sert à vérifier que toutes les conditions sont réalisées.", "Il sert à vérifier qu'une, et une seule, des conditions est réalisée.", "Il sert à vérifier qu'une, au moins, des conditions est réalisée."],
+"correctAnswer": "Il sert à vérifier qu'une, au moins, des conditions est réalisée."
+},
+{
+"question": "6/Quelles valeurs peut prendre le type booléen ?",
+"answers": ["0 ou 1", "TRUE ou FALSE", "Toutes sauf NULL"],
+"correctAnswer": "TRUE ou FALSE"
+},
+{
+"question": "7/La boucle for ($i=0 ; $i<=3 ; $i++ ) { echo $i; }...",
+"answers": ["Sera éxécutée 2 fois", "Sera éxécutée 3 fois", "Sera éxécutée 4 fois"],
+"correctAnswer": "Sera éxécutée 4 fois"
+},
+{
+"question": "8/Sachant que $a = 4. Quelle instruction affiche : 4 = quatre ?",
+"answers": ["echo '$a = quatre';", "echo '$a = 2+2';", "echo \"$a = quatre\""],
+"correctAnswer": "echo \"$a = quatre\""
+},
+{
+"question": "9/Sachant que $dodo = 6. Quelle est la valeur de ma nuit : $dodo += 2; ?",
+"answers": ["3", "8", "12"],
+"correctAnswer": "8"
+},
+{
+"question": "10/Dans le cas d'envoi d'informations plus ou moins sensibles par formulaire, quelle méthode utilisera-t-on de préférence ?",
+"answers": ["get", "mailto", "post"],
+"correctAnswer": "post"
+}],
+"questionsSQL":[
+{
+    "question": "1 / Que veux dire l'abréviation SQL ?",
+    "answers": ["Strong Query Language", "Strong Question Language", "Structured Question Language", "Structured Query Language"],
+    "correctAnswer": "Structured Query Language"
+},
+{
+    "question": "2 / En SQL, quelle commande utiliser pour sélectionner une ou plusieurs colonnes ?",
+    "answers": ["GET", "FILTER", "SELECT", "EXTRACT"],
+    "correctAnswer": "SELECT"
+},
+{
+    "question": "3 / En SQL, quelle commande utiliser pour sélectionner la colonne id sans doublon ?",
+    "answers": ["SELECT DIFFERENT", "SELECT UNIQUE", "SELECT DISTINCT", "EXTRACT UNIQUE"],
+    "correctAnswer": "SELECT DISTINCT"
+},
+{
+    "question": "4 / En SQL, quelle commande utiliser pour trier les résultats d'une requête ?",
+    "answers": ["ORDER BY", "ORDERED", "SORT BY", "FILTER"],
+    "correctAnswer": "ORDER BY"
+},
+{
+    "question": "5 / Quelle requête utiliser pour compter le nombre d'enregistrements dans la table clients ?",
+    "answers": ["COUNT(*) FROM clients", "SELECT COUNT(*) FROM clients", "SELECT COUNT(ALL) FROM clients", "SELECT COLUMNS(*) FROM clients"],
+    "correctAnswer": "SELECT COUNT(*) FROM clients"
+},
+{
+    "question": "6 / Quel opérateur utiliser pour réaliser une sélection sur une intervalle de valeur ?",
+    "answers": ["WITHIN", "RANGE", "INTERVAL", "BETWEEN"],
+    "correctAnswer": "BETWEEN"
+},
+{
+"question": "7 / Quelle requête utiliser pour sélectionner uniquement les 3 premiers résultats sans les 2 premiers de la table clients ?",
+"answers": ["SELECT * FROM clients LIMIT (3-2);", "SELECT * FROM clients LIMIT (2, 3);", "SELECT * FROM clients LIMIT 3 OFFSET -2;", "SELECT * FROM clients LIMIT 3 OFFSET 2;"],
+"correctAnswer": "SELECT * FROM clients LIMIT 3 OFFSET 2;"
+},
+{
+"question": "8 / Quelle requête utiliser pour sélectionner les enregistrements qui ont une valeur différente de Paris dans la colonne ville de la table clients ?",
+"answers": ["SELECT * FROM clients WHERE ville != \"paris\";", "SELECT * FROM clients WHERE ville != \"Paris\";", "SELECT * FROM clients WHERE ville IS NOT \"Paris\";", "SELECT * FROM clients WHERE ville DIFFERENT \"Paris\";"],
+"correctAnswer": "SELECT * FROM clients WHERE ville != \"Paris\";"
+},
+{
+"question": "9 / Laquelle de ces requêtes sélectionne les enregistrements de la table client ayant une valeur pour la colonne id comprise entre 11 et 55 ?",
+"answers": ["SELECT * FROM clients WHERE id > 11 AND id < 55;", "SELECT * FROM clients WHERE id > 11 WHERE id < 55;", "SELECT * FROM clients WHERE id RANGE (11, 55);", "SELECT * FROM clients WHERE id INTERVAL (11, 55);"],
+"correctAnswer": "SELECT * FROM clients WHERE id > 11 AND id < 55;"
+},
+{
+"question": "10 / Laquelle de ces requêtes réalise une jointure entre les tables clients et commandes ?",
+"answers": ["SELECT * FROM clients c, commandes cc", "SELECT * FROM clients c INNER JOIN commandes cc AND c.id = cc.id_client", "SELECT * FROM clients c INNER JOIN commandes cc ON id", "SELECT * FROM clients c INNER JOIN commandes cc ON c.id = cc.id_client"],
+"correctAnswer": "SELECT * FROM clients c INNER JOIN commandes cc ON c.id = cc.id_client"
+}]
+}
+
+
+
+
+
+
