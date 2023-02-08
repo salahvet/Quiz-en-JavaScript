@@ -1,12 +1,18 @@
+
+///  Application Quizz en JS
+
+
+//la méthode fetch() elle nous permet la récupération des questions depuis le tableau JSON(API)
 fetch('questions.json')
  .then(response => response.json())
  .then(data => {
-const questionsHTML = data.questionsHTML;
-const questionsCSS = data.questionsCSS;
-const questionsJS = data.questionsJS;
-const questionsPHP = data.questionsPHP;
-const questionsSQL = data.questionsSQL;
-
+    const questionsHTML = data.questionsHTML;
+    const questionsCSS = data.questionsCSS;
+    const questionsJS = data.questionsJS;
+    const questionsPHP = data.questionsPHP;
+    const questionsSQL = data.questionsSQL;
+    
+    //la classe QuizElement qui gére une question a savoir son affichage la validation de la bone réponse 
     class QuizElement {
         constructor (question, answers, correctAnswer){
 
@@ -15,7 +21,7 @@ const questionsSQL = data.questionsSQL;
             this.correctAnswer = correctAnswer
             this.index = 0
         }
-
+        // methode qui gére l'affichage d'une question 
         generateHTML(){
 
             let html = `<legend>${this.question}</legend>`
@@ -35,6 +41,7 @@ const questionsSQL = data.questionsSQL;
             return  `<fieldset class ="layout" id="Quiz-Element-${this.index}">${html}<h2 id="Main-Answer-${this.index}"></h2></fieldset>` 
         }
 
+        //la méthode qui valide la réponse d'une question 
         checkOneAnswer(){
             let userAnswer = document.querySelector(`#Quiz-Element-${this.index} input:checked`).value;
             
@@ -56,6 +63,7 @@ const questionsSQL = data.questionsSQL;
         }
     }
 
+    // la classe qui parcourt le tableau pour récupérer les questions 
     class QuizManager {
         constructor(){
             this.quizElements = [];
@@ -66,7 +74,7 @@ const questionsSQL = data.questionsSQL;
         }
         
             
-        
+        //la méthode qui ajoute des questions
         addQuizElement(question, answers, correctAnswer) {
             const quizElement = new QuizElement(question, answers, correctAnswer);
             quizElement.index = this.quizElements.length;
@@ -74,10 +82,12 @@ const questionsSQL = data.questionsSQL;
             
             return quizElement;
         }
-
+        //La méthode qui affiche les questions
         showQuizElement(quizElement) {
         return quizElement.generateHTML();
         }
+
+        //la méthode qui vas traiter les réponses et compter les points
         submitAnswers() {
             this.score = 0;
 
@@ -92,6 +102,7 @@ const questionsSQL = data.questionsSQL;
             
         }
         
+        //la méthode qui permet de passer à la page suivante de quiz
         goToNextPage() {
             
             
@@ -111,75 +122,74 @@ const questionsSQL = data.questionsSQL;
             nextpage.classList.remove('hide');
 
             const quizElements = this.getQuizElementsForNextPage()
-            
-            
-
             for (const quizElement of quizElements) {
                 const quizElementHTML = this.showQuizElement(quizElement);
                 nextpage.innerHTML += quizElementHTML;
                 }
 
         }
+        
+        //Méthode qui récupère les questions pour la page suivante 
         getQuizElementsForNextPage() {
             let quizElements = [];
             let currentPageIndex = this.currentPage - 1;
-          
+        
             for (let i = currentPageIndex; i < currentPageIndex + 1; i++) {
-              const devQuizPage = devQuizPages[i];
-          
-              for (const question of devQuizPage) {
+            const devQuizPage = devQuizPages[i];
+        
+            for (const question of devQuizPage) {
                 const quizElement = this.addQuizElement(question.question, question.answers, question.correctAnswer);
                 quizElements.push(quizElement);
-              }
             }
-          
+            }
+        
             return quizElements;
-          }
-        
-          goBackPage() {
+        }
+        // retour en arrière a la page présidente
+        goBackPage() {
             
-        if (this.currentPage === 1) {
-            return;
-        }
+            if (this.currentPage === 1) {
+                return;
+            }
 
-        let scoreElement = document.getElementById('score');
-        scoreElement.textContent = `Votre score est : 0/10`;
+            let scoreElement = document.getElementById('score');
+            scoreElement.textContent = `Votre score est : 0/10`;
 
-        const currentPageId = `#Quiz-container${this.currentPage}`;
-        const currentPage = document.querySelector(currentPageId);
-        currentPage.classList.add('hide');
-        currentPage.innerHTML = '';
-        this.currentPage--;
-        const previousPageId = `#Quiz-container${this.currentPage}`;
-        const previousPage = document.querySelector(previousPageId);
-        previousPage.classList.remove('hide');
+            const currentPageId = `#Quiz-container${this.currentPage}`;
+            const currentPage = document.querySelector(currentPageId);
+            currentPage.classList.add('hide');
+            currentPage.innerHTML = '';
+            this.currentPage--;
+            const previousPageId = `#Quiz-container${this.currentPage}`;
+            const previousPage = document.querySelector(previousPageId);
+            previousPage.classList.remove('hide');
 
-        const quizElements = this.getQuizElementsForPreviousPage();
-        
+            const quizElements = this.getQuizElementsForPreviousPage();
+            
 
-        for (const quizElement of quizElements) {
-            const quizElementHTML = this.showQuizElement(quizElement);
-            previousPage.innerHTML += quizElementHTML;
- 
-        }
+            for (const quizElement of quizElements) {
+                const quizElementHTML = this.showQuizElement(quizElement);
+                previousPage.innerHTML += quizElementHTML;
+    
+            }
          
-}
+        }
+        //Méthode qui récupère les questions pour la page précédente
+        getQuizElementsForPreviousPage() {
+            let quizElements = [];
+            let currentPageIndex = this.currentPage - 1;
 
-getQuizElementsForPreviousPage() {
-  let quizElements = [];
-  let currentPageIndex = this.currentPage - 1;
+                for (let i = currentPageIndex; i < currentPageIndex + 1; i--) {
+                    const devQuizPage = devQuizPages[i];
 
-  for (let i = currentPageIndex; i < currentPageIndex + 1; i--) {
-    const devQuizPage = devQuizPages[i];
+                    for (const question of devQuizPage) {
+                    const quizElement = this.addQuizElement(question.question, question.answers, question.correctAnswer);
+                    quizElements.push(quizElement);
+                    }
+                }
 
-    for (const question of devQuizPage) {
-      const quizElement = this.addQuizElement(question.question, question.answers, question.correctAnswer);
-      quizElements.push(quizElement);
-    }
-  }
-
-  return quizElements;
-}
+            return quizElements;
+        }
 
     }
 
@@ -195,14 +205,14 @@ getQuizElementsForPreviousPage() {
     ///////////----global--------//////////
     
    
-        
+    // Création d'instance de l'objet quizManager à partir du tableau d'objet 
     for ( let  question of questionsHTML) {
         quizManager.addQuizElement(question.question, question.answers, question.correctAnswer);
     }
 
    
     
-
+    //l'affichage des questions d'une page 
     let questionIndex = 0
     for (const quizElement of quizManager.quizElements) {
     questionIndex +=1
@@ -210,13 +220,13 @@ getQuizElementsForPreviousPage() {
     currentPage.innerHTML += html;
     }
     
-
+    //la validation des réponses 
     validateButton.addEventListener('click', function() {quizManager.submitAnswers();});
    
-    console.log(quizManager)
-
+    //passé à la page suivante 
     nextButton.addEventListener('click', function() {quizManager.goToNextPage()});
     
+    //retourner la page précédente
     goBacktButton.addEventListener('click', function() {
         quizManager.goBackPage()
     
